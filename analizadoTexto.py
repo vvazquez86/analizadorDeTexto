@@ -1,0 +1,22 @@
+print("Por favor ingrese el texto a analizar")
+texto = input()
+print("Ahora ingrese tres letras")
+letra1 = input()
+letra2 = input()
+letra3 = input()
+
+print(f"La frase ingresada es: {texto}")
+texto = texto.lower()
+estaPython = "python" in texto
+cletra1 = texto.count(letra1)
+cletra2 = texto.count(letra2)
+cletra3 = texto.count(letra3)
+print(f"En el texto se ecuentra {cletra1} veces la letra {letra1.upper()}, {cletra2} la letra {letra2.upper()} y {cletra3} veces la letra {letra3.upper()}")
+lstTexto = texto.split()
+print(f"El texto tiene {len(lstTexto)} palabras")
+print(f"La primera letra del texto es: {texto[0].upper()} y  la ultima es: {texto[-1].upper()}")
+
+lstTexto.reverse()
+textoRev = " ".join(lstTexto)
+print(f"La frase al reves quedaria: {textoRev}")
+print(f"¿La palabra Python se encuentra en el texto?: {estaPython}")
